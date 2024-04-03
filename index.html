@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+
+    <title>My Porfolio</title>
+  </head>
+  <body>
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">N<span>OO</span>R</a>
+        <div class="nav__menu " id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link" active-link>Home</a></li>
+            <li><a href="#about" class="nav__link" active-link>About</a></li>
+            <li>
+              <a href="#projects" class="nav__link" active-link>Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav__link" active-link>Contact</a>
+            </li>
+            <li> <a href="" class="cvButton">Download C.V</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+                    <i class="ui uil-times"></i></div>
+
+        </div>
+        
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-bars"></i></div>
+      </nav>
+    </header>
+    <!--main page-->
+    <main class="main">
+      <sec class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home_subtitle">Welcome To My World</span>
+            <h1 class="home__title">
+              Hi, I'm Noor <span>Front-End Developer.</span> based in IRAQ
+            </h1>
+            <button id="aboutme-btn">Explore More About Me</button>
+          </div>
+
+          <img src="assets/img/home1.jpg" alt="" class="home__img" />
+        </div>
+      </sec>
+      <!--About-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <!-- <img class="aboutimg" src="assets/img/about.jpg" alt="" /> -->
+
+          <div class="about__content">
+            <h2 class="section__title">About Me</h2>
+
+            <p class="about__description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Obcaecati doloremque error in natus! Exercitationem quo quod
+            </p>
+
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
+              <!-- <span class="tabs__btn"data-target="#experience">Experience</span> -->
+              <span class="tabs__btn"data-target="#education">Education & Certification</span>
+            </div>
+
+            <div class="tabs__content">
+              <div class="tabs__item tab__active" data-content id="skills">
+                <div class="tabs__data grid">
+                  <div class="tabs__description">
+                    <div class="skills-container container grid section-border">
+                      <!--skill1-->
+                      <div class="skills-content">
+
+                          <div class="skills-info">
+                              <div class="skills-data">
+                                  <div class="skills-blob">
+                                      <img src="assets/img/html.png" alt="skills img" id="htmlicon">
+                                  </div>
+                                  <h3 class="skills-name"></h3>
+                                  <span class="skills-subtitle"></span>
+                              </div>
+              
+                              <div class="skills-data">
+                                  <div class="skills-blob">
+                                      <img src="assets/img/css.png" alt="skills img" id="cssicon">
+                                  </div>
+                                  <h3 class="skills-name"></h3>
+                                  <span class="skills-subtitle"></span>
+                              </div>
+              
+                              <div class="skills-data">
+                                  <div class="skills-blob">
+                                      <img id="jspic" src="assets/img/js.png" alt="skills img" id>
+                                  </div>
+                                  <h3 class="skills-name"></h3>
+                                  <span class="skills-subtitle"></span>
+                              </div>
+              
+                              <div class="skills-data" id="bootstrabicon">
+                                  <div class="skills-blob">
+                                      <img src="assets/img/boot.png" alt="skills img" id="booticon">
+                                  </div>
+                                  <h3 class="skills-name"></h3>
+                                  <span class="skills-subtitle"></span>
+                              </div>
+              
+                              <div class="skills-data" id="reacticon">
+                                  <div class="skills-blob">
+                                      <img id="reactjspic" src="assets/img/reactjs.png" alt="skills img">
+                                  </div>
+                                  <h3 class="skills-name"></h3>
+                                  <span class="skills-subtitle"></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+
+              <div class="tabs__item" data-content id="education">
+                <div class="tabs__data grid">
+                  <p class="tabs__description">
+                    <span>BSc in Systems Engineering</span> - Al-Nahrain University.
+                    <span>2018 - 2022</span>
+                  </p>
+                  <p class="tabs__description">
+                    <span>Front-End Bootcamp</span> - SheCodesToo.
+                    <span>2023</span>
+                  </p>
+                </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+
+      <section class="project section" id="projects">
+        <h2 class="section__title1">My Projects</h2>
+        <p class="section__description1">Discover my collection of straightforward yet impactful projects, showcasing simplicity at its finest.</p>
+        
+        <div class="project__container container grid">
+          <!-- item1 -->
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Mobile Robot</h3>
+            <p class="project__description">Arduino project</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Simple To-Do List App</h3>
+            <p class="project__description">React.js</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Calculator App</h3>
+            <p class="project__description">React.js</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Simple LogIn Page</h3>
+            <p class="project__description">React.js</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Arduino Project</h3>
+            <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, rerum.</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+
+          <div class="project__item">
+            <img src="assets/img/project1.png" alt="" class="project__img">
+          <div class="project__data">
+            <h3 class="project__title">Arduino Project</h3>
+            <p class="project__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, rerum.</p>
+            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h2 class="section__title">Contact Me</h2>
+            <p class="contact__description">I am available for freelance work. connect with me via e-mail: <a href="mailto:nooralbeaty18@gmail.com">nooralbeaty18@gmail.com</a></p>
+            <form class="contact__form" id="contact-form">
+
+              <div class="contact__form-input">
+                <input type="text" name="name" placeholder="Your Name *" class="contact__input" id="contact-name">
+              </div>
+
+              <form class="contact__form" id="contact-form">
+                <div class="contact__form-input">
+                  <input type="email" name="email" placeholder="Your E-mail" class="contact__input" id="contact-email">
+                </div>
+
+                <form class="contact__form" id="contact-form">
+                  <div class="contact__form-input">
+                    <input type="text" name="subject" placeholder="Write a Subject*" class="contact__input" id="contact-subject">
+                  </div>
+
+                  <form class="contact__form" id="contact-form">
+                    <div class="contact__form-input">
+                      <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit" class="btn" />
+                    <p class="error__message" id="error--message"></p>
+            </form>
+          </div>
+
+          <img src="" alt="" class="contact__img">
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <a href="index.html" class="footer__logo">N<span>OO</span>R</a>
+
+        <div class="footer__socials">
+
+          <a href="https://iq.linkedin.com/in/noor-abdel-muneim-128831175" target="_blank" class="footer__social-link">
+            <i class="uil uil-linkdin">
+          </i></a>
+
+          <a href="www.instagram.com" target="_blank" class="footer__social-link">
+            <i class="uil uil-instagram">
+          </i></a>
+
+          <a href="www.github.com" target="_blank" class="footer__social-link">
+            <i class="uil uil-github">
+          </i></a>      
+
+        </div>
+
+        <p class="footer__copyright">&copy; 2024. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Email JS -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
