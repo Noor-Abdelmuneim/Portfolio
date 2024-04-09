@@ -2,7 +2,7 @@ const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]');
 
 tabs.forEach((tab) => {
-    tab.addEventListener('click', () => { // corrected the syntax here
+    tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dataset.target);
 
         tabContents.forEach((tabContent) => {
@@ -26,14 +26,14 @@ const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close');
 
-if(navToggle) {
-    navToggle.addEventListener('click' , () => {
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     });
 }
 
-if(navClose) {
-    navClose.addEventListener('click' , () => {
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     });
 }
@@ -44,9 +44,48 @@ if(navClose) {
 const navLink = document.querySelectorAll('.nav__link');
 
 function linkAction() {
-    const navMenu = document.getElementById('nav-menu'); 
+    const navMenu = document.getElementById('nav-menu');
 
     navMenu.classList.remove('show-menu');
 }
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
+
+//about
+document.querySelector('body').addEventListener('mousemove', eyeball);
+
+function eyeball() {
+    const eye = document.querySelectorAll('.eye');
+    eye.forEach(function (eye) {
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+
+        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rotation = (radian * (180 / Math.PI) * -1) + 270;
+        eye.style.transform = "rotate(" + rotation + "deg)"
+    })
+}
+
+//contactForm
+// emailjs.sendForm('service_2wf68vp', 'template_j2gysom', '#contact-form', 'xwekY_ckdAFO-_32n')(
+    document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceID = "sservice_2wf68vp";
+      const templateID = "template_j2gysom";
+
+      // send the email here
+      emailjs.sendForm(serviceID, templateID, this).then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("FAILED...", error);
+        }
+      );
+    });

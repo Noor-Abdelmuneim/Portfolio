@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-.home__container{
+.home__container {
   height: 100vh;
 }
 
@@ -182,6 +182,7 @@ textarea {
 }
 
 #aboutme-btn {
+  text-decoration: none;
   font-size: 16px;
   font-weight: 200;
   margin-top: 20px;
@@ -196,6 +197,11 @@ textarea {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+}
+
+.about_link{
+  text-decoration: none;
+  color: white;
 }
 
 #aboutme-btn:after {
@@ -244,7 +250,8 @@ textarea {
   border-radius: 50%;
   border: 0.15rem solid rgb(255, 255, 255);
   margin-left: auto;
-  margin-top: 100px;
+  margin-top: 20px;
+  margin-top: 20px;
 }
 .home__img:hover {
   transform: translateY(-0.25rem);
@@ -265,6 +272,39 @@ textarea {
 .about__description {
   margin-bottom: 2rem;
 }
+/* //animationnnnnnnnnn */
+
+
+.box {
+  display: flex;
+}
+
+.box .eye {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: block;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, .2),
+              inset 0 0 15px #f6cfb3,
+              inset 0 0 25px #f8decb;
+}
+
+.box .eye:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #000;
+  border: 10px solid #4996ee;
+  box-sizing: border-box;
+}
 
 .tabs__btns {
   display: flex;
@@ -279,7 +319,7 @@ textarea {
 
 .tabs__btn {
   cursor: pointer;
-  color: black;
+  color: #fff;
   position: relative;
   padding-bottom: 0.5rem;
 }
@@ -306,7 +346,7 @@ textarea {
 /* ACTIVE TAB */
 
 .tabs__btn.tab__active {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .tabs__btn.tab__active::after {
@@ -683,9 +723,8 @@ textarea {
 }
 
 .nav__toggle,
-.nav__close{
+.nav__close {
   display: none;
-
 }
 
 /* For large devices */
@@ -740,7 +779,6 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 992px) {
   .container {
     max-width: 720px;
@@ -758,7 +796,6 @@ textarea {
   .cvButton {
     display: block;
   }
-
 
   /* .nav__link-btn {
     display: none;
@@ -842,9 +879,8 @@ textarea {
     font-size: 2rem;
   }
   .nav__toggle,
-  .nav__close{
+  .nav__close {
     display: block;
-  
   }
 }
 
@@ -857,6 +893,13 @@ textarea {
   .home__img {
     width: 280px;
     height: 280px;
+  }
+  .box .eye{
+    display: none;
+  }
+
+  .about__description{
+    text-align: center;
   }
 
   .tabs__btn {
@@ -885,23 +928,64 @@ textarea {
     padding: 2.75rem;
   }
 
+  .home__content{
+    margin-left: 10px;
+  }
+
   .home__img {
     width: 260px;
     height: 260px;
+    margin-top: 9%;
+  }
+  .about__description{
+    text-align: center;
   }
 
   .project__item {
     padding: 2rem 1.5rem;
   }
   .skills-info {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 1rem;
     padding-bottom: 1rem;
   }
   #bootstrabicon,
-#reacticon {
-  margin-left: 0;
-}
+  #reacticon {
+    margin-left: 0;
+  }
+  #reacticon {
+    margin-left: 97%;
+    margin-top: -30px;
+  }
+  .project__img{
+    border-radius: 40px;
+  }
+  .project__container{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    flex-direction: column;
+  }
+  .section__title1{
+    font-size: xx-large;
+  }
+  .section__description1{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .contact__container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    flex-direction: column;
+  }
+  .contact__description {
+    text-align: center;
+  }
+  .btn {
+    margin-left: 4px;
+  }
+  .project__title{
+    margin-top: -30%;
+  }
 }
 
 /* For small devices */
@@ -910,7 +994,6 @@ textarea {
     width: 240px;
     height: 240px;
   }
-  
 
   .tabs__description span:last-child {
     display: inline;
@@ -921,8 +1004,7 @@ textarea {
     bottom: 1rem;
   }
   .nav__toggle,
-  .nav__close{
+  .nav__close {
     display: block;
-  
   }
 }

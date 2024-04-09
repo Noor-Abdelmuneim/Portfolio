@@ -30,8 +30,7 @@
 
           <div class="nav__close" id="nav-close">
                     <i class="ui uil-times"></i></div>
-
-        </div>
+                  </div>
         
         <div class="nav__toggle" id="nav-toggle">
           <i class="uil uil-bars"></i></div>
@@ -46,7 +45,8 @@
             <h1 class="home__title">
               Hi, I'm Noor <span>Front-End Developer.</span> based in IRAQ
             </h1>
-            <button id="aboutme-btn">Explore More About Me</button>
+            <button id="aboutme-btn"><a class="about_link" href="#about">Explore More About Me</a></button>
+            <!-- <a href="#about" id="aboutme-btn">Explore More About Me</a> -->
           </div>
 
           <img src="assets/img/home1.jpg" alt="" class="home__img" />
@@ -55,7 +55,13 @@
       <!--About-->
       <section class="about section" id="about">
         <div class="about__container container grid">
-          <!-- <img class="aboutimg" src="assets/img/about.jpg" alt="" /> -->
+          <!-- <img class="aboutimg" src="assets/img/modern desktop computer.gif" alt="" /> -->
+          <div class="box">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          
+          
 
           <div class="about__content">
             <h2 class="section__title">About Me</h2>
@@ -156,7 +162,7 @@
           <div class="project__data">
             <h3 class="project__title">Mobile Robot</h3>
             <p class="project__description">Arduino project</p>
-            <a href="#arduinocode" id="codebtn">< Source Code /></a>
+            <a href="https://github.com/Noor-Abdelmuneim/Mobile-Robot.git" id="codebtn">< Source Code /></a>
           </div>
           </div>
 
@@ -212,7 +218,8 @@
         <div class="contact__container container grid">
           <div class="contact__content">
             <h2 class="section__title">Contact Me</h2>
-            <p class="contact__description">I am available for freelance work. connect with me via e-mail: <a href="mailto:nooralbeaty18@gmail.com">nooralbeaty18@gmail.com</a></p>
+            <p class="contact__description">I am available for freelance work. connect with me via e-mail: <a href="mailto:nooralbeaty18@gmail.com">nooralbeaty18@gmail.com</a>
+            <a href="mailto:nooralbeaty18@gmailcom">nooralbeaty18@gmailcom</a></p>
             <form class="contact__form" id="contact-form">
 
               <div class="contact__form-input">
@@ -235,7 +242,7 @@
                     </div>
 
                     <input type="submit" value="Submit" class="btn" />
-                    <p class="error__message" id="error--message"></p>
+                    <p class="error__message" id="error-message"></p>
             </form>
           </div>
 
@@ -253,14 +260,15 @@
         <div class="footer__socials">
 
           <a href="https://iq.linkedin.com/in/noor-abdel-muneim-128831175" target="_blank" class="footer__social-link">
+            <img src="assets/img/linkdin.png" alt="">
             <i class="uil uil-linkdin">
           </i></a>
 
-          <a href="www.instagram.com" target="_blank" class="footer__social-link">
+          <a href="https://www.instagram.com/noor.abdelmuneim?igsh=MW9na2J3azVsc3N5OA%3D%3D&utm_source=qr" target="_blank" class="footer__social-link">
             <i class="uil uil-instagram">
           </i></a>
 
-          <a href="www.github.com" target="_blank" class="footer__social-link">
+          <a href="https://github.com/Noor-Abdelmuneim" target="_blank" class="footer__social-link">
             <i class="uil uil-github">
           </i></a>      
 
@@ -271,9 +279,7 @@
     </footer>
 
     <!-- Email JS -->
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
 
 
     <script src="assets/js/app.js"></script>
