@@ -69,23 +69,23 @@ function eyeball() {
 
 //contactForm
 // emailjs.sendForm('service_2wf68vp', 'template_j2gysom', '#contact-form', 'xwekY_ckdAFO-_32n')(
-    document
+document
     .getElementById("contact-form")
     .addEventListener("submit", function (event) {
-      event.preventDefault();
+        event.preventDefault();
 
-      const serviceID = "sservice_2wf68vp";
-      const templateID = "template_j2gysom";
+        const serviceID = "sservice_2wf68vp";
+        const templateID = "template_j2gysom";
 
-      // send the email here
-      emailjs.sendForm(serviceID, templateID, this).then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error);
-          alert("FAILED...", error);
-        }
-      );
+        // send the email here
+        emailjs.sendForm(serviceID, templateID, this).then(
+            (response) => {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("SUCCESS!");
+            },
+            (error) => {
+                console.log("FAILED...", error);
+                alert("FAILED...", error);
+            }
+        );
     });

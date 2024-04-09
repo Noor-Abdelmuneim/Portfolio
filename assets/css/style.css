@@ -626,6 +626,7 @@ textarea {
   height: 100vh;
 }
 .contact__content {
+  margin-top: -20%;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 4rem;
@@ -882,6 +883,12 @@ textarea {
   .nav__close {
     display: block;
   }
+  .box .eye{
+    display: none;
+  }
+  .contact__description{
+    text-align: center;
+  }
 }
 
 /* For medium devices */
@@ -985,6 +992,9 @@ textarea {
   }
   .project__title{
     margin-top: -30%;
+  }
+  .contact__content {
+    margin-top: -70%;
   }
 }
 
