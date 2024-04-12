@@ -51,7 +51,7 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-//about
+//about photo
 document.querySelector('body').addEventListener('mousemove', eyeball);
 
 function eyeball() {

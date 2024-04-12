@@ -71,6 +71,7 @@ textarea {
 }
 
 .section__description1 {
+  margin-top: 20px;
   max-width: 600px;
   margin-inline: auto;
   margin-bottom: 3.75rem;
@@ -951,8 +952,11 @@ textarea {
   .project__item {
     padding: 2rem 1.5rem;
   }
+  .skills-data{
+    width: 100%;
+  }
   .skills-info {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem 1rem;
     padding-bottom: 1rem;
   }
