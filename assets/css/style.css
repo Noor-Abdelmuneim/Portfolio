@@ -12,6 +12,9 @@
 .home__container {
   height: 100vh;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 input,
 textarea,
@@ -252,7 +255,6 @@ textarea {
   border: 0.15rem solid rgb(255, 255, 255);
   margin-left: auto;
   margin-top: 20px;
-  margin-top: 20px;
 }
 .home__img:hover {
   transform: translateY(-0.25rem);
@@ -397,8 +399,8 @@ textarea {
   text-align: center;
 }
 .skills-data .skills-blob {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-color: #c14646;
   border-radius: 90%;
   place-items: center;
@@ -464,6 +466,7 @@ textarea {
 #reacticon {
   margin-left: 100%;
 }
+
 #htmlicon {
   width: 88%;
 }
@@ -535,7 +538,7 @@ textarea {
 .project__title {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-top: 0;
 }
 
 .project__description {
@@ -624,24 +627,25 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
 }
 .contact__content {
-  margin-top: -20%;
-  grid-template-columns: repeat(2, 1fr);
+  display: grid; /* Added */
+  grid-template-columns: repeat(1, 1fr);
   align-items: center;
   column-gap: 4rem;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 
 .contact__description,
-.conract__input {
+.contact__input {
   font-weight: 400;
 }
 
 .contact__description {
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .contact__description a {
@@ -653,7 +657,7 @@ textarea {
 }
 
 .contact__input {
-  border: 2px solid rgba(192, 192, 192, 0.386);
+  border: 2px solid rgba(255, 255, 255, 0.386);
   padding: 0.8rem 1.25rem;
   width: 100%;
   border-radius: 30px;
@@ -672,6 +676,10 @@ textarea {
   left: 0;
   font-size: small;
   font-weight: 400;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
 }
 
 /* FOOTER */
@@ -753,6 +761,10 @@ textarea {
 
   .home__content {
     order: 1;
+    margin-left: 10px;
+  }
+  .box .eye{
+    display: none;
   }
 
   .home__img,
@@ -897,6 +909,12 @@ textarea {
   .container {
     max-width: 540px;
   }
+  #bootstrabicon {
+  margin-left: 0;
+}
+.section__description1{
+  margin-left: 10px;
+}
 
   .home__img {
     width: 280px;
@@ -914,6 +932,11 @@ textarea {
     flex-wrap: wrap;
     row-gap: 0.75rem;
     column-gap: 1.5rem;
+  }
+  .skills-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+    padding-bottom: 1rem;
   }
 
   .project__container,
@@ -952,9 +975,11 @@ textarea {
   .project__item {
     padding: 2rem 1.5rem;
   }
-  .skills-data{
-    width: 100%;
+  .skills-data .skills-blob {
+    width: 120px;
+    height: 120px;
   }
+
   .skills-info {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem 1rem;
@@ -964,10 +989,7 @@ textarea {
   #reacticon {
     margin-left: 0;
   }
-  #reacticon {
-    margin-left: 97%;
-    margin-top: -30px;
-  }
+
   .project__img{
     border-radius: 40px;
   }
@@ -999,6 +1021,14 @@ textarea {
   }
   .contact__content {
     margin-top: -70%;
+  }
+  .contact__form-input{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .btn{
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
